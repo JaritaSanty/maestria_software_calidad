@@ -21,6 +21,10 @@ var modal_10 = document.getElementById("modal-10");
 var btn_10 = document.getElementById("btn-10");
 var modal_req = document.getElementById("modal-req");
 var btn_req = document.getElementById("btn-req");
+var modal_sel = document.getElementById("modal-sel");
+var btn_sel = document.getElementById("btn-sel");
+var modal_cup = document.getElementById("modal-cup");
+var btn_cup = document.getElementById("btn-cup");
 
 // Abrir modal al hacer clic en el botón
 btn_1.addEventListener("click", function() {
@@ -55,6 +59,12 @@ btn_10.addEventListener("click", function() {
 });
 btn_req.addEventListener("click", function() {
   modal_req.style.display = "block";
+});
+btn_sel.addEventListener("click", function() {
+  modal_sel.style.display = "block";
+});
+btn_cup.addEventListener("click", function() {
+  modal_cup.style.display = "block";
 });
 
 // Cerrar modal al hacer clic fuera del contenido del modal
@@ -91,5 +101,11 @@ window.addEventListener("click", function(event) {
   }
   if (event.target == modal_req) {
     modal_req.style.display = "none";
+  }
+  if (event.target == modal_sel) {
+    modal_sel.style.display = "none";
+  }
+  if (event.target == modal_cup) {
+    modal_cup.style.display = "none";
   }
 });
